@@ -1,4 +1,6 @@
 .idea/
+*.docx
+*.tmp
 
 # Name of the compiled executable to be ignored
 hello_1
