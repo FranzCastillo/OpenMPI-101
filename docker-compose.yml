@@ -1,0 +1,14 @@
+services:
+  development:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/src  # Mount the 'src' directory from the host to the container
+    networks:
+      - mpi-network
+    command: /bin/bash  # This starts a Bash shell, you can override it later if needed
+
+networks:
+  mpi-network:
+    driver: bridge  # Default Docker bridge network for communication between containers
