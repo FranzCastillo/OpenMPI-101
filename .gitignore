@@ -1,1 +1,6 @@
 .idea/
+
+# Name of the compiled executable to be ignored
+hello_1
+hello_2
+hello_3
